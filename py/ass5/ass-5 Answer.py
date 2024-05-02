@@ -1,4 +1,4 @@
-'''#1
+#1
 class petrol:
     def __init__(self):
         self.liters=0
@@ -361,7 +361,6 @@ result = -matrix2
 print("Transpose of second matrix:")
 print(result)
 
-'''
 #12
 class Time:
     def __init__(self, hours=0, minutes=0, seconds=0):
@@ -422,5 +421,3 @@ if time1 >= time2:
     print("First time is greater than or equal to second time.")
 else:
     print("First time is less than second time.")
-
-
