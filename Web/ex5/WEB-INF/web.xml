@@ -1,0 +1,27 @@
+<web-app>
+  <servlet>
+   <servlet-name>Hello</servlet-name>
+   <servlet-class>Hello</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>HitCount</servlet-name>
+   <servlet-class>HitCount</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>Session</servlet-name>
+   <servlet-class>Session</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+   <servlet-name>Session</servlet-name>
+   <url-pattern>/Session</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>HitCount</servlet-name>
+   <url-pattern>/HitCount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>Hello</servlet-name>
+   <url-pattern>/Hello</url-pattern>
+  </servlet-mapping>
+</web-app>

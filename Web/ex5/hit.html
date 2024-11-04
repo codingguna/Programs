@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>hit count: <span id="hit-count"></span></h1>
+<button onclick="gethitcount()">Get Hit Count</button>
+<script>
+function gethitcount(){
+	var xhr=new XMLHttpRequest();
+	xhr.open("GET","HitCount",true);
+	xhr.onload=function(){
+		if(xhr.status === 200){
+			document.getElementById("hit-count").textContent=xhr.responseText;
+		}else{
+			console.error("error fetching hit count :",xhr.statusText);
+		}
+	};
+	xhr.send();
+}
+</script>
+</body>
+</html>

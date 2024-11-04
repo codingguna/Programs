@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Session Tracking</title>
+</head>
+<body>
+<form action="Session" method="post">
+<h2>Enter your name</h2><input type="text" name='name'>
+<input type="hidden" name='SessionID' value="${pageContext.session.id}"><br>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>
