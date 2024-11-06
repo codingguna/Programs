@@ -1,0 +1,10 @@
+import cv2
+img=cv2.imread('download.jpeg')
+k=int(input('enter kernel size: '))
+blur=cv2.boxFilter(img,-1,(k,k),normalize=True)
+blur1=cv2.blur(img,(k,k))
+cv2.imshow('input',img)
+cv2.imshow("boxfilter",blur)
+cv2.imshow("blur",blur1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
