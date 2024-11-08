@@ -1,0 +1,6 @@
+name=input("enter your name :")
+age=int(input("enter your age:"))
+color=input('enter your fav color :')
+hobbies=input('enter your hobbies :')
+print('\n.........................................')
+print('\nname :',name,'\nage :',age,'\nfavorite colour :',color,'\nhobbies :',hobbies)
